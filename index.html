@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Letter to Indian Tech Startups</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;600&display=swap"
+    rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -25,7 +27,7 @@
       gap: 2rem;
     }
 
-    p{
+    p {
       font-family: "Roboto Mono", monospace;
       font-optical-sizing: auto;
       font-weight: 400;
@@ -56,6 +58,67 @@
       margin-top: 0.5rem;
     }
 
+    .chart-section {
+      text-align: center;
+      margin: 4rem 0;
+    }
+
+    .pie-chart {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: conic-gradient(#4dd0e1 0% 60%,
+          #ff4081 60% 85%,
+          #f1ff5c 85% 100%);
+      margin: 2rem auto;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .chart-legend {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    .chart-legend li {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    .legend-color {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+      border-radius: 3px;
+    }
+
+
+    #workforce-chart {
+      background: radial-gradient(circle, #1a1f2b, #151b29);
+      border: 2px solid #4dd0e1;
+      box-shadow: 0 0 20px rgba(77, 208, 225, 0.4);
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      margin: 4rem 0;
+    }
+
+    #workforce-chart .pie-chart {
+      margin-top: 2rem;
+    }
+
+    #workforce-chart .chart-legend li {
+      color: #ffffff;
+    }
+
+    #workforce-chart:hover {
+      transform: none;
+      box-shadow: 0 0 20px rgba(77, 208, 225, 0.4);
+      background: radial-gradient(circle, #1a1f2b, #151b29);
+      border-color: #4dd0e1;
+    }
+
+
     .content {
       padding: 2rem;
       max-width: 800px;
@@ -70,12 +133,14 @@
       transition: background-color 0.3s;
       border: 2px solid wheat;
     }
+
     .section:hover {
       background-color: #2a2a2a;
-      border-color:#f1ff5c;
+      border-color: #f1ff5c;
       box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
       transform: translateY(-0.25em);
     }
+
     .section h2 {
       color: #4dd0e1;
       font-family: 'Orbitron', sans-serif;
@@ -89,19 +154,25 @@
       left: 0;
       transform: translateY(-5%);
       font-size: 1.3em;
-      filter: 
-        drop-shadow(0 0 2px #f1ff5c) 
-        hue-rotate(-10deg);
+      filter:
+        drop-shadow(0 0 2px #f1ff5c) hue-rotate(-10deg);
       animation: float 3s ease-in-out infinite;
     }
 
     @keyframes float {
-      0%, 100% { transform: translateY(-5%) rotate(0deg); }
-      50% { transform: translateY(-15%) rotate(5deg); }
+
+      0%,
+      100% {
+        transform: translateY(-5%) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-15%) rotate(5deg);
+      }
     }
 
-    #end{
-      color:#F5E1A4;
+    #end {
+      color: #F5E1A4;
       text-align: center;
       margin-top: 4rem;
       font-size: 1.5rem;
@@ -115,13 +186,16 @@
       header {
         flex-direction: column;
       }
+
       header img {
-        width: 140px; 
-        height: 140px; 
+        width: 140px;
+        height: 140px;
       }
+
       .header-text h1 {
         font-size: 2rem;
       }
+
       .content {
         padding: 1rem;
       }
@@ -131,27 +205,52 @@
 
 <body>
   <header>
-    <img src="https://images.unsplash.com/photo-1581822261290-991b38693d1b" alt="ISRO Rocket Launch - Symbolizing India's Tech Ambition">
+    <img src="https://images.unsplash.com/photo-1581822261290-991b38693d1b"
+      alt="ISRO Rocket Launch - Symbolizing India's Tech Ambition">
     <div class="header-text">
       <h1>An Open Letter to India's Future Tech Titans</h1>
-      <p>India is looking beyond quick commerce</p>
+      <p>Build for India. Scale for the World.</p>
     </div>
   </header>
 
   <div class="content">
     <section class="section">
       <h2>Look Beyond the Easy Wins</h2>
-      <p>While food delivery apps brought convenience to our doorsteps, India's destiny is to deliver solutions to humanity's greatest challenges. The easy wins of quick commerce were just the warm-up, now we must play in the league of quantum computing, space tech, and AI that transforms industries. The world doesn't need another discount coupon; it needs Indian minds solving problems that matter.</p>
+      <p>While food delivery apps brought convenience to our doorsteps, India's destiny is to deliver solutions to
+        humanity's greatest challenges. The easy wins of quick commerce were just the warm-up, now we must play in the
+        league of quantum computing, space tech, and AI that transforms industries. The world doesn't need another
+        discount coupon; it needs Indian minds solving problems that matter.</p>
     </section>
 
     <section class="section">
       <h2>Fields That Need You</h2>
-      <p>Artificial Intelligence, Robotics, Electric Vehicles, Quantum Computing, Space Exploration, and Semiconductor Development. The future belongs to those who dare to step into these frontiers.</p>
+      <p>Artificial Intelligence, Robotics, Electric Vehicles, Quantum Computing, Space Exploration, and Semiconductor
+        Development. The future belongs to those who dare to step into these frontiers.</p>
     </section>
 
     <section class="section">
       <h2>India Can Lead</h2>
-      <p>We're no longer playing catch-up in the global tech race. With our unmatched talent, hunger for disruption, and legacy of scientific brilliance, Indian startups are poised to dominate the defining technologies of this century. The question isn’t whether we can lead—it’s whether we’ll seize this moment with the audacity it demands. The world isn’t waiting. Neither should we.</p>
+      <p>We're no longer playing catch-up in the global tech race. With our unmatched talent, hunger for disruption, and
+        legacy of scientific brilliance, Indian startups are poised to dominate the defining technologies of this
+        century. The question isn’t whether we can lead—it’s whether we’ll seize this moment with the audacity it
+        demands. The world isn’t waiting. Neither should we.</p>
+    </section>
+
+    <section class="section" id="workforce-chart">
+      <h2>India’s Workforce Advantage</h2>
+      <div class="pie-chart"></div>
+      <ul class="chart-legend">
+        <li><span class="legend-color" style="background: #4dd0e1;"></span> 60% Young Workforce (&lt;35 years)</li>
+        <li><span class="legend-color" style="background: #ff4081;"></span> 25% Multilingual Talent</li>
+        <li><span class="legend-color" style="background: #f1ff5c;"></span> 15% Growing STEM Graduates</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Unleashing India's Workforce for the Next Tech Revolution</h2>
+      <p>Quick commerce tapped into India's affordable and efficient labor force. Now, the same potential can fuel the
+        next frontier — building powerful AI systems, multilingual LLMs, and deep-tech innovations. With a diverse and
+        vast workforce, India is uniquely positioned to train, fine-tune, and localize technologies for the world.</p>
     </section>
 
     <div class="cta" id="end">
@@ -159,4 +258,5 @@
     </div>
   </div>
 </body>
+
 </html>
